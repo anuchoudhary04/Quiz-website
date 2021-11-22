@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css\admin-dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header>
+    <label for="check">
+      <i style="left: 200px;margin-top: 17px;" class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+      <h3>Online Quiz</h3>
+    </div>
+    <div class="right_area">
+      <a href="#" class="logout_btn">Logout</a>
+    </div>
+  </header>
+  <!--header area end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+    <center>
+
+      <img src="images\admin.png" class="profile_image" alt="">
+      <h4>Admin</h4>
+
+    </center>
+
+
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button">
+        <a href="admin-dashbboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+      </button>
+    </p>
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+        <a href="#"><i class="fas fa-user-graduate "></i><span>Students</span></a>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample1">
+      <button type="button" class="btn btn-light btn-outline-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong7">
+        Add Students
+      </button><br>
+      <a style="color:black; " class="btn btn-light btn-outline-dark btn-sm" href="manage-students.html" role="button">Manage Students</a>
+
+    </div>
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+        <a href="#"><i class="fas fa-book "></i><span>Courses</span></a>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample2">
+      <button type="button" class="btn btn-light btn-outline-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong3">
+        Add Course
+      </button><br>
+      <a style="color:black; " class="btn btn-light btn-outline-dark btn-sm" href="manage-course.html" role="button">Manage Courses</a>
+</div>
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+        <a href="#"><i class="fas fa-diagnoses"></i><span>Exams</span></a>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample3">
+      <button type="button" class="btn btn-light btn-outline-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong1">
+        Add Exam
+      </button>
+      <br>
+      <a style="color:black; " class="btn btn-light btn-outline-dark btn-sm" href="manage-examNew.html" role="button">Manage Exams</a>
+
+    </div>
+
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+        <a href="#"><i class="fas fa-flag-checkered"></i><span>Reports</span></a>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample4">
+      <button type="button" class="btn btn-light btn-outline-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong6">
+        Examinee Result
+      </button>
+    </div>
+
+    <p>
+      <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+        <a href="#"><i class="far fa-comment"></i><span>Feedback</span></a>
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample5">
+      <button type="button" class="btn btn-light btn-outline-dark btn-sm" data-toggle="modal" data-target="#exampleModalLong8">
+        Add feedback
+      </button>
+
+    </div>
+
+
+    <p>
+
+    </p>
+
+
+
+
+  </div>
+  <!--sidebar end-->
+
+
+  <!--content start-->
+  <div class="content">
+    <br><br><br><br><br>
+
+
+    <br><br><br>
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-xl-4">
+          <div class="card bg-c-green order-card">
+            <div class="card-block">
+              <h6 class="m-b-20">Total Student </h6>
+              <h2 class="text-right"><i class="fas fa-user-graduate f-left"></i><span>56</span></h2>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xl-4">
+          <div class="card bg-c-yellow order-card">
+            <div class="card-block">
+              <h6 class="m-b-20">Total Exams</h6>
+              <h2 class="text-right"><i class="fas fa-book f-left"></i><span>6</span></h2>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xl-4">
+          <div class="card bg-c-pink order-card">
+            <div class="card-block">
+              <h6 class="m-b-20">Total Questions</h6>
+              <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>20</span></h2>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+
+
+  </div>
+  <!--content end-->
+
+  <!-- Modal 1-->
+  <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle1">Add Exam</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="col">
+
+              <form id="your_form_id" class="form-horizontal" action="" method="POST" name="your_form_id">
+
+                <div class="col-lg-10 form-group">
+                  <label>Course Name</label>
+                  <select class="form-control" id="sel1">
+                    <option>Profit and Loss</option>
+                    <option>Animal Kingdom</option>
+                    <option>Chemical Bonding</option>
+                    <option>Java</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Question</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="text" placeholder="Write the Question" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Marks</label>
+                  <div class="col-lg-10">
+                    <input id="email_address" class="required form-control" name="markss" type="number" placeholder="5" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Option 1</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="text" placeholder="xyz" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Option 2</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="text" placeholder="lmn" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Option 3</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="text" placeholder="pqr" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Option 4</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="text" placeholder="abc" />
+                  </div>
+                </div>
+                <div class="col-lg-10 form-group">
+                  <label for="">Answer</label>
+                  <select class="form-control" id="">
+                    <option>-------</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+
+                  </select>
+                </div>
+
+
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End  Modal 1 -->
+
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle2">Manage Exam</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Exam Details</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th class="text-center">
+
+                          </th>
+                          <th>Exam Name</th>
+                          <th>Number of Students</th>
+                          <th>Due Date</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td class="p-0 text-center">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-1">
+                              <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>Profit and Loss</td>
+                          <td>5</td>
+                          <td>2018-01-20</td>
+                          <td>
+                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i
+                                class="fas fa-trash"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-0 text-center">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-4">
+                              <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>Animal Kingdom</td>
+                          <td>10</td>
+                          <td>2018-09-11</td>
+                          <td>
+                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i
+                                class="fas fa-trash"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-0 text-center">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-5">
+                              <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>Chemical Bonding</td>
+                          <td>7</td>
+                          <td>2018-04-12</td>
+                          <td>
+                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i
+                                class="fas fa-trash"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-0 text-center">
+                            <div class="custom-checkbox custom-control">
+                              <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-6">
+                              <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
+                            </div>
+                          </td>
+                          <td>Java </td>
+                          <td>25</td>
+                          <td>2018-01-20</td>
+                          <td>
+                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i
+                                class="fas fa-trash"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End  Modal 2 -->
+
+  <!-- Modal 3-->
+  <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add Course</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>ADD COURSE</h4>
+
+
+          <div class="container">
+            <div class="col">
+
+              <form id="your_form_id" class="form-horizontal" action="" method="POST" name="your_form_id">
+
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Course Name</label>
+                  <div class="col-lg-10">
+                    <input id="first_name" class="required form-control" name="first_name" type="text" placeholder="Enter the name of course" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Total Questions</label>
+                  <div class="col-lg-10">
+                    <input id="last_name" class="required form-control" name="ques" type="number" placeholder="Number Of Questions" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col control-label" for="inputEmail1">Total Marks</label>
+                  <div class="col-lg-10">
+                    <input id="email_address" class="required form-control" name="markss" type="number" placeholder="50" />
+                  </div>
+                </div>
+                <div class="col">
+                  <button id="" class="btn btn-outline-dark" type="submit">Submit</button>
+                </div>
+
+
+              </form>
+
+            </div>
+          </div>
+
+          <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End  Modal 3 -->
+
+
+
+
+  <!-- Modal 6-->
+
+
+  <div class="modal fade bd-example-modal-lg" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Manage Course</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>All Results</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+
+                          <th>Full Name</th>
+                          <th>Exam Name</th>
+                          <th>Scores</th>
+
+                        </tr>
+                        <tr>
+                          <td>Rohan Mishra</td>
+                          <td>Profit and Loss</td>
+                          <td>4/5</td>
+                        </tr>
+
+                        <tr>
+                          <td>Rohan Mishra</td>
+                          <td>Profit and Loss</td>
+                          <td>4/5</td>
+                        </tr>
+
+                        <tr>
+                          <td>Rohan Mishra</td>
+                          <td>Profit and Loss</td>
+                          <td>4/5</td>
+                        </tr>
+
+                        <tr>
+                          <td>Rohan Mishra</td>
+                          <td>Profit and Loss</td>
+                          <td>4/5</td>
+                        </tr>
+
+                        <tr>
+                          <td>Rohan Mishra</td>
+                          <td>Profit and Loss</td>
+                          <td>4/5</td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End  Modal 6 -->
+
+  <!-- Modal 7-->
+
+
+  <div class="modal fade bd-example-modal-lg" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Manage Course</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Students >> Add Student</h4>
+
+          <div class="container">
+            <div class="row gutters">
+              <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="account-settings">
+                      <div class="user-profile">
+
+                        <h5 class="user-name">Alex Sandro</h5>
+                        <h6 class="user-email">xyz@gmail.com</h6>
+                      </div>
+                      <div class="about">
+                        <h5>About</h5>
+                        <p>Sixth Standard Student of Section-D</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mb-2 text-primary">Personal Details</h6>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="fullName">Full Name</label>
+                          <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="eMail">Email</label>
+                          <input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="phone">Phone</label>
+                          <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="website">Website URL</label>
+                          <input type="url" class="form-control" id="website" placeholder="Website url">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mt-3 mb-2 text-primary">Address</h6>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="Street">Street</label>
+                          <input type="name" class="form-control" id="Street" placeholder="Enter Street">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="ciTy">City</label>
+                          <input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="sTate">State</label>
+                          <input type="text" class="form-control" id="sTate" placeholder="Enter State">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label for="zIp">Zip Code</label>
+                          <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row gutters">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="text-right">
+                          <button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
+                          <button type="button" id="submit" name="submit" class="btn btn-primary">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End  Modal 7 -->
+
+  <!-- Modal 8-->
+
+  <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Feedback Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-9 class2">
+            <div class="divcontact-form">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fname">FirstName:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="lname">LastName:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="lname" placeholder="Enter last Name" name="lname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Comment:</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End  Modal 8 -->
+
+</body>
+<footer>
+
+  <div class="foots container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
+          <br>
+          <p>
+            Copyright & copy; Online Quiz 2021 </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

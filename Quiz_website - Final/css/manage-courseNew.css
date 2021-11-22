@@ -1,0 +1,47 @@
+header {
+  background: #22242A;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.left_area h3 {
+  color: #fff;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+footer {
+  padding: 0;
+  background-color: #212529;
+  margin: 0;
+  text-align: center;
+}
+
+.vertical-scrollable>.row {
+  position: absolute;
+  top: 120px;
+  bottom: 100px;
+  left: 180px;
+  width: 50%;
+  overflow-y: scroll;
+}
+.colour{
+  background-color: #FFF8E5;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manage Exam</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css\manage-courseNew.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <header>
+    <div class="left_area">
+      <h3>Online Quiz</h3>
+    </div>
+    <div class="right_area">
+      <a href="admin-dashbboard.html" class="logout_btn">Dashboard</a>
+    </div>
+  </header>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6">
+
+
+        <div class="colour col">
+          <h5 style="text-align:center; color:black;">Exam Information</h5>
+          <form id="your_form_id" class="form-horizontal" action="" method="POST" name="your_form_id">
+
+            <div class="col-lg-10 form-group">
+              <label>Course Name</label>
+              <select class="form-control" id="sel1">
+                <option>Profit and Loss</option>
+                <option>Animal Kingdom</option>
+                <option>Chemical Bonding</option>
+                <option>Java</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="col control-label" for="ExamTitle">Exam Title</label>
+              <div class="col-lg-10">
+                <input id="Exam_Title" class="required form-control" name="ques" type="text" placeholder="Class test 1" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col control-label" for="inputEmail1">Exam Description</label>
+              <div class="col-lg-10">
+                <input id="exam_desc" class="required form-control" name="Description" type="text" placeholder="Basics" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col control-label" for="timeLimit">Exam Time Limit</label>
+              <div class="col-lg-10">
+                <input id="time" class="required form-control" name="tim" type="number" placeholder="10" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col control-label" for="display">Option 2</label>
+              <div class="col-lg-10">
+                <input id="disp_limit" class="required form-control" name="ques" type="number" placeholder="1" />
+              </div>
+            </div>
+
+
+            <div class="col">
+              <button id="" class="btn btn-primary" type="submit">Update</button>
+            </div>
+
+
+          </form>
+
+        </div>
+      </div>
+      <div class="colour col-lg-6 col-md-6">
+        <div id="questions">
+          <h5>Exam Questions</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                  Add Question
+              </button>
+          <div class="container vertical-scrollable">
+            <br>
+            <p>No questions found....</p>
+
+            <div class="">
+              <br>
+              <p>1.</p>
+              <p>2.</p>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br>
+      <!-- Modal 1-->
+      <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle1">Add Exam</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="col">
+
+                  <form id="your_form_id" class="form-horizontal" action="" method="POST" name="your_form_id">
+
+                    <div class="col-lg-10 form-group">
+                      <label>Course Name</label>
+                      <select class="form-control" id="sel1">
+                        <option>Profit and Loss</option>
+                        <option>Animal Kingdom</option>
+                        <option>Chemical Bonding</option>
+                        <option>Java</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Question</label>
+                      <div class="col-lg-10">
+                        <input id="last_name" class="required form-control" name="ques" type="text" placeholder="Write the Question" />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Marks</label>
+                      <div class="col-lg-10">
+                        <input id="email_address" class="required form-control" name="markss" type="number" placeholder="5" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Option 1</label>
+                      <div class="col-lg-10">
+                        <input id="last_name" class="required form-control" name="ques" type="text" placeholder="xyz" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Option 2</label>
+                      <div class="col-lg-10">
+                        <input id="last_name" class="required form-control" name="ques" type="text" placeholder="lmn" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Option 3</label>
+                      <div class="col-lg-10">
+                        <input id="last_name" class="required form-control" name="ques" type="text" placeholder="pqr" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col control-label" for="inputEmail1">Option 4</label>
+                      <div class="col-lg-10">
+                        <input id="last_name" class="required form-control" name="ques" type="text" placeholder="abc" />
+                      </div>
+                    </div>
+                    <div class="col-lg-10 form-group">
+                      <label for="">Answer</label>
+                      <select class="form-control" id="">
+                        <option>-------</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+
+                      </select>
+                    </div>
+
+
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End  Modal 1 -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+
+</body>
+<footer>
+
+  <div class="foots container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
+          <br>
+          <p>
+            Copyright & copy; Online Quiz 2021 </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
